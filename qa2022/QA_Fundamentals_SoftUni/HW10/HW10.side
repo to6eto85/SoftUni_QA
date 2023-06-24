@@ -1,0 +1,76 @@
+{
+  "id": "ac7b5c9a-b1fc-403b-a7e5-78036a73431f",
+  "version": "2.0",
+  "name": "HW10",
+  "url": "https://www.animal.co.uk",
+  "tests": [{
+    "id": "443fcf75-b45b-4ff7-9999-4aed6da330d5",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "30977de0-2d66-4676-b502-79dc95c1742b",
+    "name": "Open with correct address",
+    "commands": [{
+      "id": "e200cf26-45e0-43ce-b61c-8a684f297885",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf459fc4-9c7a-4b79-b7d8-a9318a04dd63",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "Sustainable & Organic Clothing - Animal",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a6c45078-edd5-49dd-a34a-db37020e09d6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8446dc09-7754-4e3f-bbe1-ae79cd57529c",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=a > img",
+      "targets": [
+        ["css=a > img", "css:finder"],
+        ["xpath=//img[@alt='Animal']", "xpath:img"],
+        ["xpath=//div[@id='shopify-section-header']/div/div/div[2]/a/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a881b87-ef31-47df-ac00-87d1ab4d4a01",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "5764e10b-c16e-4fbd-bd67-3edc417c085e",
+    "name": "Open without correct address",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "4998be86-3a54-456f-98e7-5042f7dcce1c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["443fcf75-b45b-4ff7-9999-4aed6da330d5"]
+  }, {
+    "id": "ec310f86-6b5b-4ee1-9b15-7a17fbb8e828",
+    "name": "Open site",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.animal.co.uk/"],
+  "plugins": []
+}
